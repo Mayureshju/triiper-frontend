@@ -1,11 +1,17 @@
 'use client'
+
+import { Button } from '@mui/material'
 import React from 'react'
 
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
+import AcUnitIcon from '@mui/icons-material/AcUnit';
+import SpeedIcon from '@mui/icons-material/Speed';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 const Car = () => {
 
   return (
     <div>
-      <section className="self-stretch flex flex-row items-start justify-center pt-0 pb-[153px] box-border max-w-full text-left text-3xs text-primary-0 font-oswald mq450:hidden">
+      <section className=" self-stretch flex flex-row items-start justify-center pt-0 pb-[153px] box-border max-w-full text-left text-3xs text-primary-0 font-oswald mq450:hidden">
         <div className="self-stretch w-[1740px] flex flex-col items-start justify-start gap-[81px] max-w-full">
           <div className=" flex-1 overflow-x-auto flex flex-row items-start justify-start gap-[35px] max-w-full ">
             <div className="w-[304px] rounded-xl [background:linear-gradient(-1.85deg,_rgba(153,_153,_153,_0.17),_rgba(230,_230,_230,_0))] shadow-[20px_20px_100px_rgba(0,_0,_0,_0.13)] shrink-0 flex flex-col items-end justify-start pt-4 px-0 pb-0 box-border relative gap-[121px]">
@@ -586,128 +592,73 @@ const Car = () => {
         </div>
       </section>
 
-
-
-      <div className=' mq1700:hidden mq1325:hidden mq900:hidden mq450:block'>
-        <div className="w-[304px] rounded-xl [background:linear-gradient(-1.85deg,_rgba(153,_153,_153,_0.17),_rgba(230,_230,_230,_0))] shadow-[20px_20px_100px_rgba(0,_0,_0,_0.13)] shrink-0 flex flex-col items-end justify-start pt-4 px-0 pb-0 box-border relative gap-[121px]">
-          <div className="self-stretch h-[359px] rounded-xl [background:linear-gradient(-1.85deg,_rgba(153,_153,_153,_0.17),_rgba(230,_230,_230,_0))] hidden z-[0]" />
-          <img
-            className="w-[253px] h-[123px] absolute !m-[0] top-[81px] right-[25px] object-cover z-[2]"
-            loading="lazy"
-            alt=""
-            src="/2582589513-newswiftdzire2018removebgpreview-1@2x.png"
-          />
-          <div className="flex flex-row items-start justify-end py-0 pr-[19.6px] pl-5">
-            <div className="rounded-8xs bg-seagreen flex flex-row items-start justify-start py-px pr-[7px] pl-2 z-[1]">
-              <div className="h-[17px] w-[38px] relative rounded-8xs bg-seagreen hidden" />
-              <b className="relative leading-[150%] inline-block min-w-[23px] z-[1]">
-                4.3/5
-              </b>
-            </div>
-          </div>
-          <div className="self-stretch rounded-t-none rounded-b-mini bg-primary-0 flex flex-col items-start justify-start pt-[61px] px-0 pb-[33px] gap-[23px] z-[1] text-sm">
-            <div className="w-[187px] h-[42px] relative hidden">
-              <div className="absolute top-[0px] left-[0px] rounded-8xs bg-button-color w-full h-full" />
-              <div className="absolute top-[10px] left-[71px] leading-[150%] font-medium inline-block min-w-[52px]">
-                Rent Now
-              </div>
-            </div>
-            <div className="self-stretch h-[305px] relative rounded-t-none rounded-b-mini bg-primary-0 hidden" />
-            <div className="self-stretch h-[51px] flex flex-row items-start justify-start py-0 pr-[46px] pl-[45px] box-border text-darkgray-100">
-              <div className="self-stretch flex-1 flex flex-row items-start justify-between gap-[20px]">
-                <div className="self-stretch w-[122px] flex flex-row items-start justify-start gap-[50px]">
-                  <div className="flex-1 flex flex-col items-start justify-start">
-                    <div className="h-[30px] flex flex-row items-start justify-start py-0 pr-[3px] pl-[9px] box-border">
-                      <img
-                        className="h-[30px] w-[30px] relative z-[2]"
-                        alt=""
-                        src="/group-6.svg"
-                      />
-                    </div>
-                    <div className="relative inline-block min-w-[42px] z-[2]">
-                      4 seater
-                    </div>
-                  </div>
-                  <div className="self-stretch flex flex-col items-start justify-start">
-                    <img
-                      className="w-[30px] h-[30px] relative object-cover z-[2]"
-                      alt=""
-                      src="/group-7@2x.png"
-                    />
-                    <div className="flex flex-row items-start justify-start py-0 px-[5px]">
-                      <div className="relative inline-block min-w-[20px] z-[2]">
-                        A/C
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex flex-col items-start justify-start">
-                  <div className="h-[30px] flex flex-row items-start justify-start py-0 pr-2 pl-[3px] box-border">
-                    <img
-                      className="h-[30px] w-[30px] relative object-cover z-[2]"
-                      alt=""
-                      src="/group-8@2x.png"
-                    />
-                  </div>
-                  <div className="relative inline-block min-w-[41px] z-[2]">
-                    ₹12/km
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="self-stretch flex flex-col items-start justify-start gap-[9.5px] text-gray-100">
-              <div className="self-stretch h-[1.5px] relative box-border z-[2] border-t-[1.5px] border-solid border-darkgray-300" />
-              <div className="self-stretch flex flex-row items-start justify-start py-0 pr-[26px] pl-6">
-                <div className="flex-1 flex flex-row items-start justify-between gap-[20px]">
-                  <div className="w-[137px] flex flex-col items-start justify-start pt-[3px] px-0 pb-0 box-border">
-                    <div className="self-stretch flex flex-col items-start justify-start gap-[9px]">
-                      <div className="relative leading-[150%] font-medium z-[2]">
-                        Maruti Suzuki Swift Dzire
-                      </div>
-                      <div className="relative text-3xs z-[2] text-button-color font-nunito">
-                        <p className="m-0">
-                          <span className="font-semibold font-nunito">
-                            <span className="text-darkgray-200">
-                              Book now at just
-                            </span>
-                            <span className="text-gray-100">{` `}</span>
-                          </span>
-                          <span>
-                            <b className="font-nunito">₹2997</b>
-                          </span>
-                          <span className="font-semibold">
-                            <span>{`. `}</span>
-                          </span>
-                        </p>
-                        <p className="m-0 text-darkgray-200">
-                          <span className="font-semibold">
-                            <span>Pay the rest late</span>
-                            <span className="text-darkgray-400">r</span>
-                            <span className="text-black">{` `}</span>
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <b className="relative text-lg inline-block text-button-color min-w-[49px] whitespace-nowrap z-[2]">
-                    ₹8260
-                  </b>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-row items-start justify-start py-0 pr-[60px] pl-[57.4px]">
-              <button className="cursor-pointer [border:none] pt-2.5 pb-[11px] pr-16 pl-[71px] bg-button-color rounded-8xs flex flex-row items-start justify-start whitespace-nowrap z-[2] hover:bg-royalblue-200">
-                <div className="h-[42px] w-[187px] relative rounded-8xs bg-button-color hidden" />
-                <div className="relative text-sm leading-[150%] font-medium font-oswald text-primary-0 text-left inline-block min-w-[52px] z-[1]">
-                  Rent Now
-                </div>
-              </button>
-            </div>
-          </div>
+      {/* font-montserrat */}
+      {/* mq450:grid mq450:grid-cols-2 */}
+      <div className='mq1700:hidden mq1325:hidden mq900:hidden mq450:block'>
+        <div className=' mq450:w-[100%] box-border px-[15px] mt-[50px] mq450:grid mq450:grid-cols-1'>
+          <Car_component />
+          <Car_component />
+        </div>
+        <div className='flex justify-center items-center mt-[20px]'>
+          <Button className='w-[170px]'>Show All<KeyboardArrowDownIcon /></Button>
         </div>
       </div>
     </div>
   )
 }
-
 export default Car
+
+
+
+const Car_component = () => {
+  return (
+    <>
+      <div className='flex flex-col w-[90%] mx-auto my-[10px] box-border py-[15px] rounded-2xl shadow-[0px_3px_130px_rgba(0,_0,_0,_0.13)] font-montserrat'>
+        {/* rating div */}
+        <div className='flex justify-end box-border px-[15px]'>
+          <p className=' box-border px-[10px] bg-light-green-600 rounded-xl '>4.5/5</p>
+        </div>
+
+        {/* car image section */}
+        <div className=' w-[100%] box-border px-[10px] flex justify-center items-center ' >
+          <img src="/car_image.png" alt="" className='w-[80%] mx-auto' />
+        </div>
+
+        {/* about car */}
+        <div className='w-[100%] box-border px-[10px] py-[20px] flex justify-around gap-[15px]'>
+          <div className='flex flex-col items-center justify-center box-border px-[7px] py-[5px]'>
+            <p><PeopleAltIcon /></p>
+            <p>4 Seater</p>
+          </div>
+          <div className='flex flex-col items-center justify-center box-border px-[7px] py-[5px]'>
+            <p><AcUnitIcon /></p>
+            <p>A/C</p>
+          </div>
+          <div className='flex flex-col items-center justify-center box-border px-[7px] py-[5px]'>
+            <p><SpeedIcon /></p>
+            <p>₹12/km</p>
+          </div>
+        </div>
+
+        {/* car rent desc */}
+        <div className='flex justify-between items-center box-border px-[10px] mt-[20px]'>
+          <div>
+            <p className='box-border py-[5px] text-xl font-semibold'>Maruti Suzuki Swift Dzire</p>
+            <p className='text-xs'> Book now at just  <span>₹2997</span>.</p>
+            <p className='text-xs'> Pay the rest later </p>
+          </div>
+          <div>
+            <p>₹8260</p>
+          </div>
+        </div>
+
+        {/* button */}
+        <div className='w-[100%] box-border mt-[30px] flex justify-center items-center'>
+          <button className=" capitalize bg-blue-800 text-white px-[35px] py-[10px] rounded-3xs ">Rent Now</button>
+        </div>
+
+
+      </div>
+    </>
+  )
+}

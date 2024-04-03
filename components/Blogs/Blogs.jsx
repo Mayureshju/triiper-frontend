@@ -55,7 +55,7 @@ const Blogs = () => {
             <div className=' w-[97%] mx-auto overflow-x-auto shrink-0 flex flex-row items-start justify-start gap-[37px] [debug_commit:f6aba90]'>
 
               {
-                blog_content && blog_content.map((data, index) => {
+                blog_content && blog_content.map((data) => {
                   return (
                   
                       <div key={data.id} className='w-[304px] shrink-0 flex flex-col items-start justify-start gap-[18px] max-w-full'>
@@ -78,7 +78,7 @@ const Blogs = () => {
                           />
                         </div>
                       </div>
-                  
+                   
                   )
                 })
               }
@@ -93,3 +93,4 @@ const Blogs = () => {
 };
 
 export default Blogs;
+

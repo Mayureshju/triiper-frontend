@@ -1,4 +1,5 @@
 'use client'
+
 import { Button, FormControlLabel, Switch, TextField, Typography } from '@mui/material'
 import React from 'react'
 import GroupIcon from '@mui/icons-material/Group';
@@ -9,6 +10,12 @@ import TaxiAlertOutlinedIcon from '@mui/icons-material/TaxiAlertOutlined';
 import DepartureBoardOutlinedIcon from '@mui/icons-material/DepartureBoardOutlined';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import InputAdornment from '@mui/material/InputAdornment';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
+import { MobileDateTimePicker } from '@mui/x-date-pickers/MobileDateTimePicker';
+import dayjs from 'dayjs';
+import ImportExportIcon from '@mui/icons-material/ImportExport';
 
 const Trending_search_mobile = () => {
     const styles = {
@@ -72,28 +79,38 @@ const Trending_search_mobile = () => {
             </div>
 
             <div className='flex flex-col gap-[15px]'>
-                <TextField style={box_style} fullWidth placeholder="Pick Up location" id="fullWidth"
-                    InputProps={{
-                        startAdornment: (
-                            <InputAdornment position="start">
-                                <LocationOnOutlinedIcon />
-                            </InputAdornment>
-                        ),
-                    }}
-                />
-                <TextField style={box_style} fullWidth placeholder="Drop location" id="fullWidth"
-                    InputProps={{
-                        startAdornment: (
-                            <InputAdornment position="start">
-                                <LocationOnOutlinedIcon />
-                            </InputAdornment>
-                        ),
-                    }}
-                />
+                <div>
+                    <TextField style={box_style} fullWidth placeholder="Pick Up location" id="fullWidth"
+                        InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                    <LocationOnOutlinedIcon />
+                                </InputAdornment>
+                            ),
+                        }}
+                    />
+                    <div className='w-[100%] flex justify-center items-center'>
+                        <Button className=' w-[5%]' variant="contained"><ImportExportIcon /></Button>
+                    </div>
+                    <TextField style={box_style} fullWidth placeholder="Drop location" id="fullWidth"
+                        InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                    <LocationOnOutlinedIcon />
+                                </InputAdornment>
+                            ),
+                        }}
+                    />
+                </div>
+                <div style={box_style} className='w-[100%]'>
+                    <LocalizationProvider  dateAdapter={AdapterDayjs}>
+                        <MobileDateTimePicker className='w-[100%]' defaultValue={dayjs(Date.now())} />
+                    </LocalizationProvider>
+                </div>
                 <div style={box_style} className='flex flex-col gap-[7px] box-border py-[7px] px-[5px]'>
                     <div >
                         <h3 className='flex gap-[5px] items-center mt-[3px] '>
-                            <GroupIcon /> 
+                            <GroupIcon />
                             <span>Passengers</span>
                         </h3>
                     </div>
@@ -108,7 +125,7 @@ const Trending_search_mobile = () => {
                         </div>
                         <div className='flex flex-col justify-center items-center'>
                             <p>Pets</p>
-                            <p className=' flex flex-row justify-center items-center'><RemoveCircleOutlineOutlinedIcon className='text-gray-600'/><span>0</span><AddCircleOutlineOutlinedIcon className='text-gray-600' /></p>
+                            <p className=' flex flex-row justify-center items-center'><RemoveCircleOutlineOutlinedIcon className='text-gray-600' /><span>0</span><AddCircleOutlineOutlinedIcon className='text-gray-600' /></p>
                         </div>
                     </div>
                 </div>

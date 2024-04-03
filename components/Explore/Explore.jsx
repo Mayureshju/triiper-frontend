@@ -1,8 +1,6 @@
 'use client'
-
 import React from "react";
-import ExploreImg from "../../public/maldivesisland-1-1@2x.png";
-import Image from "next/image";
+
 const Explore = () => {
   
   return (
@@ -11,10 +9,10 @@ const Explore = () => {
         <div className='h-[580px] flex-1 bg-gray-200 max-w-full'>
           {/* <div className='absolute top-[0px] left-[0.6px] bg-gray-200 w-full hidden' /> */}
           <div className="flex flex-col justify-center items-center w-full h-full bg-[url('/maldivesisland-1-1@2x.png')] bg-cover bg-no-repeat bg-[top] z-[1]">
-            <Image
+            <img
               className='absolute top-[0px] left-[1.6px] w-[1700px] h-[400px] object-cover hidden'
               alt=''
-              src={ExploreImg}
+              src='/maldivesisland-1-1@2x.png'
             />
             {/* <div className='absolute top-[0px] left-[0px] bg-gray-200 w-full h-full' /> */}
             <div className="flex flex-col">

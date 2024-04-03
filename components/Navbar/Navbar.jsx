@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect } from "react";
-import Link from "next/link";
+import React from "react";
 import {
     Navbar,
     MobileNav,
@@ -89,12 +89,12 @@ export default function Navbarr() {
 
                         <div className="flex items-center gap-4">
                             <div className="mr-4 hidden lg:block">{navList}</div>
-                            <div className="flex items-center gap-x-1 ">
+                            <div className="flex items-center gap-x-1">
                                 <Button
                                     style={styles}
-                                    variant="gradient"
+                                    variant="contained"
                                     size="sm"
-                                    className="hidden uppercase lg:inline-block bg-royalblue-100"
+                                    className="hidden uppercase lg:inline-block "
                                 >
                                     <span>Sign in</span>
                                 </Button>
@@ -140,8 +140,8 @@ export default function Navbarr() {
                     </div>
                     <MobileNav open={openNav}>
                         {navList}
-                        <div className="flex items-center gap-x-1 bg-royalblue-200">
-                            <Button style={styles} fullWidth variant="gradient" size="sm" className="bg-royalblue-200">
+                        <div className="flex items-center gap-x-1">
+                            <Button style={styles} fullWidth variant="gradient" size="sm" className="">
                                 <span>Sign in</span>
                             </Button>
                         </div>
