@@ -62,8 +62,8 @@ const Trip = () => {
                         {
                             trip_data && trip_data.map((data, index) => {
                                 return (
-                                 
-                                        <div key={data.id} className="rounded-26xl bg-primary-0 shadow-[0px_4px_4px_rgba(0,_0,_0,_0.12)] box-border overflow-hidden shrink-0 flex flex-row items-center justify-start py-6 px-5 gap-[34px] max-w-full border-[1px] border-solid border-darkgray-500 mq900:flex-wrap">
+                                    <>
+                                        <div key={index} className="rounded-26xl bg-primary-0 shadow-[0px_4px_4px_rgba(0,_0,_0,_0.12)] box-border overflow-hidden shrink-0 flex flex-row items-center justify-start py-6 px-5 gap-[34px] max-w-full border-[1px] border-solid border-darkgray-500 mq900:flex-wrap">
                                             <img
                                                 className="w-[25%] self-stretch rounded-xl object-cover mq900:flex-1"
                                                 alt=""
@@ -87,7 +87,7 @@ const Trip = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                   
+                                    </>
                                 )
                             })
                         }

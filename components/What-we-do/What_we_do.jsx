@@ -1,4 +1,6 @@
 'use client'
+
+
 import React from 'react'
 
 const What_we_do = () => {
@@ -243,15 +245,6 @@ const What_we_do = () => {
                 </div>
 
 
-
-                {/* <div className="h-[99px] w-[737px] absolute !m-[0] right-[-99px] bottom-[231px] inline-block mq450:text-base">
-                            <p className="[margin-block-start:0] [margin-block-end:8px] font-semibold">
-                                &nbsp;
-                            </p>
-                            <p className="m-0 text-xl font-view-all">&nbsp;</p>
-                        </div> */}
-                {/* <div className="flex flex-col items-start justify-start gap-[40px] max-w-full z-[1] text-11xl text-black">
-                    </div> */}
             </div>
         </div>
 
