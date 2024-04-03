@@ -9,7 +9,7 @@ const Trending_search = () => {
 
     const styles = {
         borderRadius: 8,
-        backgroundColor: "#159498",
+        backgroundColor: "#1bd7bb",
     }
 
     const styles_2 = {
@@ -24,41 +24,98 @@ const Trending_search = () => {
                     Trending Search:
                 </h3>
 
-                <div className=' flex flex-row flex-wrap w-[100%] gap-[25px]'>
-                    <Button style={styles} className=' rounded-lg' variant="contained">
-                        Bangalore <ArrowRightAltIcon /> Coorg
-                    </Button>
-                    <Button style={styles_2} variant="contained">
-                        Bangalore <ArrowRightAltIcon /> Wayanad
-                    </Button>
-                    <Button style={styles_2} variant="contained">
-                        Bangalore <ArrowRightAltIcon /> Ooty
-                    </Button>
-                    <Button style={styles_2} variant="contained">
-                        Bangalore <ArrowRightAltIcon /> Pondicherry
-                    </Button>
-                    <Button style={styles_2} variant="contained">
-                        Bangalore <ArrowRightAltIcon /> Pondicherry
-                    </Button>
-                    <Button style={styles_2} variant="contained">
-                        Bangalore <ArrowRightAltIcon /> Pondicherry
-                    </Button>
-                    <Button style={styles_2} variant="contained">
-                        Bangalore <ArrowRightAltIcon /> Coorg <ArrowRightAltIcon /> Bangalore
-                    </Button>
-                    <Button style={styles_2} variant="contained">
-                        Bangalore <ArrowRightAltIcon /> Ooty <ArrowRightAltIcon /> Bangalore
-                    </Button>
-                    <Button style={styles_2} variant="contained">
-                        Bangalore <ArrowRightAltIcon /> Ooty <ArrowRightAltIcon /> Bangalore
-                    </Button>
-                    <Button style={styles_2} variant="contained">
-                        Bangalore <ArrowRightAltIcon /> Coorg <ArrowRightAltIcon /> Mysore <ArrowRightAltIcon /> Bangalore
-                    </Button>
-                    <Button style={styles_2} variant="contained">
-                        Bangalore <ArrowRightAltIcon /> Coorg <ArrowRightAltIcon /> Mysore <ArrowRightAltIcon /> Bangalore
-                    </Button>
-                </div>
+                <div className='flex flex-row flex-wrap w-[100%] gap-[25px]'>
+    <Button 
+        style={{ ...styles, backgroundColor: '#1BD7BB' }} 
+        className='rounded-lg' 
+        variant="contained"
+        onMouseEnter={(e) => { e.target.style.backgroundColor = '#159498'; }}
+        onMouseLeave={(e) => { e.target.style.backgroundColor = '#1BD7BB'; }}
+    >
+        Bangalore <ArrowRightAltIcon /> Coorg
+    </Button>
+    <Button 
+        style={{ ...styles_2, backgroundColor: '#1BD7BB' }} 
+        variant="contained"
+        onMouseEnter={(e) => { e.target.style.backgroundColor = '#159498'; }}
+        onMouseLeave={(e) => { e.target.style.backgroundColor = '#1BD7BB'; }}
+    >
+        Bangalore <ArrowRightAltIcon /> Wayanad
+    </Button>
+    <Button 
+        style={{ ...styles_2, backgroundColor: '#1BD7BB' }} 
+        variant="contained"
+        onMouseEnter={(e) => { e.target.style.backgroundColor = '#159498'; }}
+        onMouseLeave={(e) => { e.target.style.backgroundColor = '#1BD7BB'; }}
+    >
+        Bangalore <ArrowRightAltIcon /> Ooty
+    </Button>
+    <Button 
+        style={{ ...styles_2, backgroundColor: '#1BD7BB' }} 
+        variant="contained"
+        onMouseEnter={(e) => { e.target.style.backgroundColor = '#159498'; }}
+        onMouseLeave={(e) => { e.target.style.backgroundColor = '#1BD7BB'; }}
+    >
+        Bangalore <ArrowRightAltIcon /> Pondicherry
+    </Button>
+    <Button 
+        style={{ ...styles_2, backgroundColor: '#1BD7BB' }} 
+        variant="contained"
+        onMouseEnter={(e) => { e.target.style.backgroundColor = '#159498'; }}
+        onMouseLeave={(e) => { e.target.style.backgroundColor = '#1BD7BB'; }}
+    >
+        Bangalore <ArrowRightAltIcon /> Pondicherry
+    </Button>
+    <Button 
+        style={{ ...styles_2, backgroundColor: '#1BD7BB' }} 
+        variant="contained"
+        onMouseEnter={(e) => { e.target.style.backgroundColor = '#159498'; }}
+        onMouseLeave={(e) => { e.target.style.backgroundColor = '#1BD7BB'; }}
+    >
+        Bangalore <ArrowRightAltIcon /> Pondicherry
+    </Button>
+    <Button 
+        style={{ ...styles_2, backgroundColor: '#1BD7BB' }} 
+        variant="contained"
+        onMouseEnter={(e) => { e.target.style.backgroundColor = '#159498'; }}
+        onMouseLeave={(e) => { e.target.style.backgroundColor = '#1BD7BB'; }}
+    >
+        Bangalore <ArrowRightAltIcon /> Coorg <ArrowRightAltIcon /> Bangalore
+    </Button>
+    <Button 
+        style={{ ...styles_2, backgroundColor: '#1BD7BB' }} 
+        variant="contained"
+        onMouseEnter={(e) => { e.target.style.backgroundColor = '#159498'; }}
+        onMouseLeave={(e) => { e.target.style.backgroundColor = '#1BD7BB'; }}
+    >
+        Bangalore <ArrowRightAltIcon /> Ooty <ArrowRightAltIcon /> Bangalore
+    </Button>
+    <Button 
+        style={{ ...styles_2, backgroundColor: '#1BD7BB' }} 
+        variant="contained"
+        onMouseEnter={(e) => { e.target.style.backgroundColor = '#159498'; }}
+        onMouseLeave={(e) => { e.target.style.backgroundColor = '#1BD7BB'; }}
+    >
+        Bangalore <ArrowRightAltIcon /> Ooty <ArrowRightAltIcon /> Bangalore
+    </Button>
+    <Button 
+        style={{ ...styles_2, backgroundColor: '#1BD7BB' }} 
+        variant="contained"
+        onMouseEnter={(e) => { e.target.style.backgroundColor = '#159498'; }}
+        onMouseLeave={(e) => { e.target.style.backgroundColor = '#1BD7BB'; }}
+    >
+        Bangalore <ArrowRightAltIcon /> Coorg <ArrowRightAltIcon /> Mysore <ArrowRightAltIcon /> Bangalore
+    </Button>
+    <Button 
+        style={{ ...styles_2, backgroundColor: '#1BD7BB' }} 
+        variant="contained"
+        onMouseEnter={(e) => { e.target.style.backgroundColor = '#159498'; }}
+        onMouseLeave={(e) => { e.target.style.backgroundColor = '#1BD7BB'; }}
+    >
+        Bangalore <ArrowRightAltIcon /> Coorg <ArrowRightAltIcon /> Mysore <ArrowRightAltIcon /> Bangalore
+    </Button>
+</div>
+
 
             </div>
         </div>
