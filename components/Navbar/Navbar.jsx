@@ -92,14 +92,14 @@ export default function Navbarr() {
                             <div className="mr-4 hidden lg:block">{navList}</div>
                             <div className="flex items-center gap-x-1">
                                 <Button
-                                    style={{ backgroundColor: '#0056FB', color: '#FFFFFF' }}
+                                    style={{ backgroundColor: '#00000', color: '#FFFFFF' }}
                                     variant="contained"
                                     size="sm"
                                     className="hidden uppercase lg:inline-block"
                                     onMouseEnter={(e) => { e.target.style.backgroundColor = 'black'; e.target.style.color = '#FFFFFF'; }}
                                     onMouseLeave={(e) => { e.target.style.backgroundColor = '#0056FB'; e.target.style.color = '#FFFFFF'; }}
                                 >
-                                    <span>Sign in</span>
+                                    Sign in
                                 </Button>
                             </div>
                             <IconButton
