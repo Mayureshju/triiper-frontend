@@ -79,6 +79,7 @@ export default function Navbarr() {
     const styles = {
         borderRadius: "50px",
         backgroundColor: "#0056FB",
+        
     }
 
     return (
@@ -91,10 +92,12 @@ export default function Navbarr() {
                             <div className="mr-4 hidden lg:block">{navList}</div>
                             <div className="flex items-center gap-x-1">
                                 <Button
-                                    style={styles}
+                                    style={{ backgroundColor: '#0056FB', color: '#FFFFFF' }}
                                     variant="contained"
                                     size="sm"
-                                    className="hidden uppercase lg:inline-block "
+                                    className="hidden uppercase lg:inline-block"
+                                    onMouseEnter={(e) => { e.target.style.backgroundColor = 'black'; e.target.style.color = '#FFFFFF'; }}
+                                    onMouseLeave={(e) => { e.target.style.backgroundColor = '#0056FB'; e.target.style.color = '#FFFFFF'; }}
                                 >
                                     <span>Sign in</span>
                                 </Button>
